@@ -1,0 +1,431 @@
+*{
+    box-sizing: border-box;
+}
+
+body , html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+ul , li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header{
+    padding: 24px 0;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-col{
+    display: flex;
+    align-items: center;
+}
+
+.menu-list{
+    display: flex;
+}
+
+.menu-item{
+    margin-right: 50px;
+}
+
+.menu-item:last-child{
+    margin-right: 0;
+}
+
+.menu-link{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    
+    color: #212121;    
+
+    position: relative;
+}
+
+.menu-link-before::before{
+    content: "";
+    display: block;
+    
+    background: #2196F3;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.menu-link:hover{
+    color: #2196F3;
+}
+
+.menu-link-active{
+    color: #2196F3;
+}
+
+.logo{
+    margin-right: 93px;
+}
+
+.email , .tel{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    
+    color: #757575;
+}
+
+.email{
+    margin-right: 50px;
+}
+
+.email:hover{
+    color: #2196F3;
+}
+
+.tel:hover{
+    color: #2196F3;
+}
+
+/* footer */
+
+.footer{
+    background: #2F303A;
+    padding: 60px 0;
+}
+
+.footer .container{
+    display: flex;
+}
+
+.footer .logo{
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+
+.footer .email{
+    margin-bottom: 9px;
+    margin-right: 0;
+}
+
+.footer-col-first{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col-second{
+    margin-left: 70px;
+}
+
+.footer-col-third{
+    margin-left: 93px;
+}
+
+.adress{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    
+    letter-spacing: 0.03em;
+    
+    color: #FFFFFF;    
+
+    margin-bottom: 9px;
+}
+
+.footer-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;    
+
+    margin-bottom: 20px;
+}
+
+.socials-list{
+    display: flex;
+    align-items: center;
+}
+
+.socials-link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background: rgba(225, 225, 225, 0.1);
+}
+.socials-link:hover{
+    background: #2196F3;
+}
+
+.socials-item{
+    margin-right: 10px;
+}
+
+.socials-item:last-child{
+    margin-right: 0;
+}
+
+.input{
+    width: 358px;
+    height: 50px;
+    background: transparent;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    outline: none;
+}
+
+.input:focus{
+    border-color: #2196F3;
+}
+
+.footer-input-block{
+    display: flex;
+}
+
+.footer-input{
+    margin-right: 12px;
+}
+
+.team-item .socials{
+    margin-top: 16px;
+}
+
+.team-item .socials-list{
+    justify-content: center;
+}
+
+.team-item .socials-link{
+    background: #2196F3;
+}
+
+.team-item .socials-link:hover{
+    background: #174f7c;
+}
+
+
+.button{
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    
+    color: #FFFFFF;    
+    border: none;
+    padding: 16px 29px;
+
+    cursor: pointer;
+}
+
+.button span{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    
+    color: #FFFFFF;    
+}
+
+.button-send span::after{
+    content: "";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background: url(./icon\ send.png) center no-repeat;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* main portfolio */
+
+.main-portfolio{
+    padding: 94px 0;
+}
+
+.portfolio-tam{
+    margin-bottom: 50px;
+}
+
+.portfolio-tab-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-tab-item{
+    margin-right: 8px;
+}
+
+.portfolio-tab-item:last-child{
+    margin-right: 0;
+}
+
+.portfolio-tab-link{
+    background: #F5F4FA;
+    border-radius: 4px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+    padding: 9.5px 22px;
+}
+
+.portfolio-tab-link-active{
+    background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    color: #FFFFFF;
+}
+
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: 0;
+    padding-top: 30px;
+    margin-bottom: -30px;
+}
+
+.portfolio-item{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    width: 370px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.portfolio-item:last-child{
+    margin-right: 0;
+}
+
+.portfolio-img{
+    display: inline-block;
+    width: 100%;
+    height: 294px;
+}
+
+.portfolio-bg{
+    background: rgba(33, 150, 243, 0.9);
+    width: 370px;
+    height: 294px;
+
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+    padding: 63px 24px;
+
+    transition: left .4s;
+}
+
+.portfolio-item:hover .portfolio-bg{
+    left: 0;
+}
+
+.portfolio-bg p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+
+    letter-spacing: 0.03em;
+    
+    color: #FFFFFF;
+
+    margin: 0;
+}
+
+.portfolio-name{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    
+    letter-spacing: 0.06em;
+    
+    color: #212121;
+
+    margin-bottom: 4px;
+}
+
+.portfolio-type{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    
+    letter-spacing: 0.03em;
+    
+    color: #757575;   
+}
+
+.portfolio-content{
+    padding: 20px 24px;
+}
+
